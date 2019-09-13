@@ -1,5 +1,11 @@
 import React from 'react';
-import { Layout } from 'antd';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Layout, Row, Col } from 'antd';
+
+// Pages
+import Page1 from './pages/Page1';
+import Page2 from './pages/Page2';
+import Page3 from './pages/Page3';
 
 // Components
 import Navbar from './components/Navbar';
@@ -12,10 +18,29 @@ const { Content } = Layout;
 
 function App() {
   return (
-    <Layout className="App">
-      <Navbar />
-      <Content style={{ padding: '24 24px' }}>Content</Content>
-    </Layout>
+    <Router>
+      <Layout className="App">
+        <Navbar />
+        <Row>
+          <Col
+            xs={{ offset: 1, span: 22 }}
+            sm={{ offset: 1, span: 22 }}
+            md={{ offset: 1, span: 22 }}
+            lg={{ offset: 2, span: 24 }}
+            xl={{ offset: 4, span: 16 }}
+            xxl={{ offset: 5, span: 14 }}
+          >
+            <Content>
+              <Switch>
+                <Route exact path="/page1" render={Page1} />
+                <Route exact path="/page2" render={Page2} />
+                <Route exact path="/page3" render={Page3} />
+              </Switch>
+            </Content>
+          </Col>
+        </Row>
+      </Layout>
+    </Router>
   );
 }
 

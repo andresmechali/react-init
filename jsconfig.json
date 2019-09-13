@@ -3,12 +3,12 @@
     "baseUrl": "src",
     "paths": {
       "@components/*": ["components/*"],
-      "@images/*": ["images/*"],
+      "@images/*": ["static/images/*"],
+      "@data/*": ["static/data/*"],
       "@pages/*": ["pages/*"],
       "@utils/*": ["utils/*"],
       "@config/*": ["config/*"],
       "@interfaces/*": ["interfaces/*"],
-      "@data/*": ["data/*"],
       "@api/*": ["api/*"]
     }
   },
