@@ -3,6 +3,13 @@
   "env": {
     "browser": true
   },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./src/config/webpack.config.js"
+      }
+    }
+  },
   "rules": {
     "no-debugger": "warn",
     "object-curly-newline": 0,
@@ -22,6 +29,7 @@
     "implicit-arrow-linebreak": 0,
     "import/no-extraneous-dependencies": 0,
     "import/no-named-as-default-member": 0,
+    "import/no-named-as-default": 0,
     "import/prefer-default-export": "warn",
     "import/no-cycle": 0,
     "jsx-a11y/click-events-have-key-events": 0,

@@ -1,17 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
 import { Layout, Row, Col } from 'antd';
 
 // Pages
-import Page1 from './pages/Page1';
-import Page2 from './pages/Page2';
-import Page3 from './pages/Page3';
+import Page1 from '@pages/Page1';
+import Page2 from '@pages/Page2';
+import Page3 from '@pages/Page3';
 
 // Components
-import Navbar from './components/Navbar';
+import Navbar from '@components/Navbar';
 
 // Others
-import './config/style/styles.less';
+import '@config/style/styles.less';
 import './App.css';
 
 const { Content } = Layout;
@@ -35,6 +40,7 @@ function App() {
                 <Route exact path="/page1" render={Page1} />
                 <Route exact path="/page2" render={Page2} />
                 <Route exact path="/page3" render={Page3} />
+                <Route component={() => <Redirect to="/page1" />} />
               </Switch>
             </Content>
           </Col>

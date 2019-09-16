@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout, Menu, Row, Col } from 'antd';
 import { NavLink } from 'react-router-dom';
 
-import logo from '../../static/images/logo.png';
+import logo from '@images/logo.png';
 
 const { Header } = Layout;
 
@@ -16,7 +16,7 @@ const Navbar = () => (
         <Menu
           theme="light"
           mode="horizontal"
-          defaultSelectedKeys={['2']}
+          defaultSelectedKeys={['1']}
           style={{
             lineHeight: '64px',
             width: '100%',

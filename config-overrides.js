@@ -4,6 +4,7 @@ const {
   addLessLoader,
   addWebpackResolve,
   useEslintRc,
+  useBabelRc,
 } = require('customize-cra');
 const theme = require('./src/config/style/theme');
 const webpackConfig = require('./src/config/webpack.config');
@@ -32,4 +33,5 @@ module.exports = override(
   }),
   addWebpackResolve(webpackConfig.resolve),
   useEslintRc(),
+  useBabelRc(),
 );

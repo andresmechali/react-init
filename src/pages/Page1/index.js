@@ -1,5 +1,13 @@
 import React from 'react';
+import Loadable from 'react-loadable';
 
-const Page1 = () => <div>Page 1</div>;
+import Loading from '@components/Loading';
 
-export default Page1;
+import Page from './page';
+
+const LoadablePage = Loadable({
+  loader: () => import('./page'),
+  loading: <Loading />,
+});
+
+export default Page;
