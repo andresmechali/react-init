@@ -32,6 +32,21 @@
     "import/no-named-as-default": 0,
     "import/prefer-default-export": "warn",
     "import/no-cycle": 0,
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": [
+          "components/",
+          "config/",
+          "pages/",
+          "images/",
+          "data/",
+          "utils/",
+          "api/",
+          "redux/"
+        ]
+      }
+    ],
     "jsx-a11y/click-events-have-key-events": 0,
     "jsx-a11y/no-static-element-interactions": 0,
     "react/jsx-filename-extension": 0,

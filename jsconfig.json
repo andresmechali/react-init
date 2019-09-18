@@ -2,14 +2,14 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "@components/*": ["components/*"],
-      "@images/*": ["static/images/*"],
-      "@data/*": ["static/data/*"],
-      "@pages/*": ["pages/*"],
-      "@utils/*": ["utils/*"],
-      "@config/*": ["config/*"],
-      "@interfaces/*": ["interfaces/*"],
-      "@api/*": ["api/*"]
+      "components/*": ["components/*"],
+      "images/*": ["static/images/*"],
+      "data/*": ["static/data/*"],
+      "pages/*": ["pages/*"],
+      "utils/*": ["utils/*"],
+      "config/*": ["config/*"],
+      "interfaces/*": ["interfaces/*"],
+      "api/*": ["api/*"]
     }
   },
   "exclude": ["node_modules"]

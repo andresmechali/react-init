@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout, Menu, Row, Col } from 'antd';
 import { NavLink } from 'react-router-dom';
 
-import logo from '@images/logo.png';
+import logo from '../../static/images/logo.png';
 
 const { Header } = Layout;
 
@@ -18,7 +18,7 @@ const Navbar = () => (
           mode="horizontal"
           defaultSelectedKeys={['1']}
           style={{
-            lineHeight: '64px',
+            lineHeight: '55px',
             width: '100%',
           }}
         >
