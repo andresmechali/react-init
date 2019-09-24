@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout, Menu, Row, Col } from 'antd';
 import { NavLink } from 'react-router-dom';
 
-import logo from '../../static/images/logo.png';
+import logo from 'images/logo.png';
 
 const { Header } = Layout;
 

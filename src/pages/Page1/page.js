@@ -4,7 +4,7 @@ import { Card } from 'antd';
 
 import PageTitle from 'components/PageTitle';
 
-const Page1 = () => {
+const Page = () => {
   const { t } = useTranslation();
   return (
     <div>
@@ -14,4 +14,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default Page;

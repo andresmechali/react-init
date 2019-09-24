@@ -16,12 +16,6 @@ module.exports = [
             style: true,
           },
         ],
-        /*[
-          'module-resolver',
-          {
-            root: 'src',
-          },
-        ],*/
       ],
     },
   ],

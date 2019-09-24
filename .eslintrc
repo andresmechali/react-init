@@ -1,12 +1,24 @@
 {
   "extends": "airbnb",
+  "parser": "babel-eslint",
   "env": {
     "browser": true
   },
   "settings": {
     "import/resolver": {
-      "webpack": {
-        "config": "./src/config/webpack.config.js"
+      "alias": {
+        "map": [
+          ["api", "./src/api"],
+          ["components", "./src/components"],
+          ["config", "./src/config"],
+          ["data", "./src/static/data"],
+          ["images", "./src/static/images"],
+          ["interfaces", "./src/interfaces"],
+          ["pages", "./src/pages"],
+          ["redux", "./src/redux"],
+          ["utils", "./src/utils"]
+        ],
+        "extensions": [".js", ".css", ".scss", ".json"]
       }
     }
   },
@@ -32,21 +44,6 @@
     "import/no-named-as-default": 0,
     "import/prefer-default-export": "warn",
     "import/no-cycle": 0,
-    "import/no-unresolved": [
-      "error",
-      {
-        "ignore": [
-          "components/",
-          "config/",
-          "pages/",
-          "images/",
-          "data/",
-          "utils/",
-          "api/",
-          "redux/"
-        ]
-      }
-    ],
     "jsx-a11y/click-events-have-key-events": 0,
     "jsx-a11y/no-static-element-interactions": 0,
     "react/jsx-filename-extension": 0,
