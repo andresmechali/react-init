@@ -1,0 +1,11 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "page2": "Página 2",
+    "page3": "Página 3"
+  },
+  "home": {
+    "title": "Inicio",
+    "content": "Esta es la página de inicio"
+  }
+}
