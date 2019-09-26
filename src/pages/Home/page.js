@@ -8,8 +8,8 @@ const Page = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <PageTitle title="Home page" />
-      <Card>{t('Page 1')}</Card>
+      <PageTitle title={t('home.title')} />
+      <Card>{t('home.content')}</Card>
     </div>
   );
 };
