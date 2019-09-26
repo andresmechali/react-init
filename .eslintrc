@@ -16,7 +16,8 @@
           ["interfaces", "./src/interfaces"],
           ["pages", "./src/pages"],
           ["redux", "./src/redux"],
-          ["utils", "./src/utils"]
+          ["utils", "./src/utils"],
+          ["translations", "./src/translations"]
         ],
         "extensions": [".js", ".css", ".scss", ".json"]
       }

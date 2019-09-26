@@ -62,6 +62,7 @@ module.exports = [
       utils: path.resolve(__dirname, 'src/utils'),
       api: path.resolve(__dirname, 'src/api'),
       interfaces: path.resolve(__dirname, 'src/interfaces'),
+      translations: path.resolve(__dirname, 'src/translations'),
     };
 
     return newConfig;

@@ -11,6 +11,7 @@ module.exports = {
       config: path.resolve(__dirname, '../config'),
       api: path.resolve(__dirname, '../api'),
       interfaces: path.resolve(__dirname, '../interfaces'),
+      translations: path.resolve(__dirname, '../translations'),
     },
   },
 };
